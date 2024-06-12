@@ -1,97 +1,67 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page </title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <title>Modern Login Page | AsmrProg</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="col col-1">
-            <div class="image-layer">
-                <img src="img/white-outline.png" class="form-image-main">
-                <img src="img/dots.png" class="form-image dots">
-                <img src="img/coin.png" class="form-image coin">
-                <img src="img/spring.png" class="form-image spring">
-                <img src="img/rocket.png" class="form-image rocket">
-                <img src="img/cloud.png" class="form-image cloud">
-            </div>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registeration</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Sign Up</button>
+            </form>
         </div>
-        <div class="col col-2">
-            <div class="btn-box">
-                <button class="btn btn-1" id="login">Sign In</button>
-                <button class="btn btn-1" id="register">Sign Up</button>
-            </div>
-<!--Login Form Container-->
-            <div class="login-form">
-                <div class="form-title">
-                    <span>Sign In</span>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
-                <div class="form-inputs">
-                    <div class="input-box">
-                        <input type="text" class="input-field" placeholder="Username" required>
-                        <i class="bx bx-user icon"></i>
-                    </div>
-                    <div class="input-box">
-                        <input type="password" class="input-field" placeholder="Password" required>
-                        <i class="bx bx-lock-alt icon"></i>
-                    </div>
-                    <div class="forgot-pass">
-                        <a href="#">Forgot Password</a>
-                    </div>
-                    <div class="input-box">
-                        <button class="input-submit">
-                            <span>Sign In</span>
-                            <i class="bx bx-right-arrow-alt"></i>
-                        </button>
-                    </div>
+                <span>or use your email password</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">Forget Your Password?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
                 </div>
-                <div class="social-login">
-                    <i class="bx bxl-google"></i>
-                    <i class="bx bxl-facebook"></i>
-                    <i class="bx bxl-twitter"></i>
-                    <i class="bx bxl-github"></i>
-                </div>
-            </div>
-<!--Register Form-->
-            <div class="register-form">
-                <div class="form-title">
-                    <span>Create Account</span>
-                </div>
-                <div class="form-inputs">
-                    <div class="input-box">
-                        <input type="email" class="input-field" placeholder="Email" required>
-                        <i class="bx bx-envelope icon"></i>
-                    </div>
-                    <div class="input-box">
-                        <input type="text" class="input-field" placeholder="Name" required>
-                        <i class="bx bx-user icon"></i>
-                    </div>
-                    <div class="input-box">
-                        <input type="password" class="input-field" placeholder="Password" required>
-                        <i class="bx bx-lock-alt icon"></i>
-                    </div>
-                    <div class="forgot-pass">
-                        <a href="#">Forgot Password</a>
-                    </div>
-                    <div class="input-box">
-                        <button class="input-submit">
-                            <span>Sign Up</span>
-                            <i class="bx bx-right-arrow-alt"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="social-login">
-                    <i class="bx bxl-google"></i>
-                    <i class="bx bxl-facebook"></i>
-                    <i class="bx bxl-twitter"></i>
-                    <i class="bx bxl-github"></i>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
                 </div>
             </div>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
